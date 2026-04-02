@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cofer Associates — Professional General Contractor & Handyman serving the Greater Boston area since 1971. Kitchens, baths, additions, and more.">
-  <title>Cofer Associates | General Contractor &amp; Handyman | North Reading, MA</title>
+  <title>Cofer Associates | General Contractor &amp; Handyman | Andover, MA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -18,11 +18,6 @@
   <header class="nav" id="nav">
     <div class="container">
       <div class="nav__inner">
-
-        <a href="#home" class="nav__logo" aria-label="Cofer Associates — Home">
-          <img src="hiclogo.png" alt="Cofer Associates logo">
-          <span class="nav__logo-name">Cofer Associates</span>
-        </a>
 
         <nav aria-label="Main navigation">
           <ul class="nav__links" id="nav-links">
@@ -47,52 +42,73 @@
        HERO
   ======================================================== -->
   <section class="hero" id="home">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero__content">
+    <div class="hero__overlay" aria-hidden="true"></div>
 
-        <div class="hero__eyebrow">
-          <span>Serving the Greater Boston Area</span>
+    <div class="hero__grid">
+
+      <div class="hero__left">
+        <img src="logo.png" alt="Cofer Associates" class="hero__logo-img">
+      </div>
+
+      <div class="hero__right">
+
+        <div class="hero__topnav">
+          <ul class="hero__topnav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact" class="nav__cta">Contact Us</a></li>
+          </ul>
         </div>
 
-        <h1 class="hero__title">
-          Craftsmanship<br>
-          You Can<br>
-          <em>Count On.</em>
-        </h1>
+        <div class="hero__content">
 
-        <p class="hero__body">
-          Cofer Associates is a full-service General Contractor and Handyman for
-          residential and commercial clients throughout Middlesex County, Metro West,
-          the North Shore, and surrounding communities.
-        </p>
+          <div class="hero__eyebrow">
+            <span>Serving the Greater Boston Area</span>
+          </div>
 
-        <div class="hero__actions">
-          <a href="#services" class="btn btn--primary">
-            Explore Services
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-        </div>
+          <h1 class="hero__title">
+            Craftsmanship<br>
+            You Can<br>
+            <em>Count On.</em>
+          </h1>
 
-        <div class="hero__stats">
-          <div class="hero__stat">
-            <div class="stat__num">50+</div>
-            <div class="stat__label">Years of Experience</div>
+          <p class="hero__body">
+            Cofer Associates is a full-service General Contractor and Handyman for
+            residential and commercial clients throughout Middlesex County, Metro West,
+            the North Shore, and surrounding communities.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--primary">
+              Explore Services
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
           </div>
-          <div class="hero__stat">
-            <div class="stat__num">1971</div>
-            <div class="stat__label">Established</div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="stat__num">50+</div>
+              <div class="stat__label">Years of Experience</div>
+            </div>
+            <div class="hero__stat">
+              <div class="stat__num">1971</div>
+              <div class="stat__label">Established</div>
+            </div>
+            <div class="hero__stat">
+              <div class="stat__num">100s</div>
+              <div class="stat__label">Projects Completed</div>
+            </div>
           </div>
-          <div class="hero__stat">
-            <div class="stat__num">100s</div>
-            <div class="stat__label">Projects Completed</div>
-          </div>
+
         </div>
 
       </div>
+
     </div>
   </section>
 
@@ -103,18 +119,6 @@
   <section class="about" id="about">
     <div class="container">
       <div class="about__grid">
-
-        <div class="about__visual reveal">
-          <div class="about__badge">
-            <div class="about__corner about__corner--tl"></div>
-            <div class="about__corner about__corner--br"></div>
-            <div class="about__logo-wrap">
-              <img src="hiclogo.png" alt="Cofer Associates">
-              <div class="about__logo-name">Cofer Associates</div>
-              <div class="about__logo-sub">Est. 1971 &mdash; North Reading, MA</div>
-            </div>
-          </div>
-        </div>
 
         <div class="about__text reveal">
           <span class="section-label">Who We Are</span>
@@ -176,80 +180,81 @@
 
       <div class="services__grid">
 
-        <!-- General Contracting -->
+        <!-- Additions & Remodeling -->
         <div class="service-card reveal">
           <div class="service-card__icon" aria-hidden="true">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M8 40V22L24 10l16 12v18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="18" y="28" width="12" height="12" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 22L18 10l12 12v16H6V22z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="14" y="30" width="8" height="8" rx="0.5" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 26h10v12H30V26z" stroke="currentColor" stroke-width="2" stroke-dasharray="3 2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35 30v4M33 32h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">General Contracting</h3>
+          <h3 class="service-card__title">Additions &amp; Remodeling</h3>
           <p class="service-card__body">
-            Full-scale project management for residential and commercial builds.
-            From planning to completion, we oversee every detail with precision.
+            Whether you're expanding your footprint or transforming an existing space,
+            we deliver seamless additions and renovations built to the highest standards —
+            enhancing both function and lasting value.
           </p>
         </div>
 
-        <!-- Remodeling -->
+        <!-- Kitchens & Bathrooms -->
         <div class="service-card reveal">
           <div class="service-card__icon" aria-hidden="true">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M10 38l4-4m0 0l16-16m-16 16l4-4m12-12l4 4m0 0l6-6-4-4-6 6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 34L10 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="8" y="20" width="32" height="3" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="23" width="32" height="15" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 23v15" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M19 31h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M25 31h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 20v-5h8v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 15v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M21 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Remodeling &amp; Renovations</h3>
+          <h3 class="service-card__title">Kitchens &amp; Bathrooms</h3>
           <p class="service-card__body">
-            Breathe new life into any space. We handle full interior renovations
-            including basements, offices, and living areas with expert execution.
+            From custom cabinetry and countertops to tile, fixtures, and full gut renovations,
+            we transform your kitchen and bathroom into spaces you'll love for years to come.
           </p>
         </div>
 
-        <!-- Kitchens & Baths -->
+        <!-- Basements & In-Law Dwellings -->
         <div class="service-card reveal">
           <div class="service-card__icon" aria-hidden="true">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect x="8" y="14" width="32" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
-              <path d="M16 14V10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="2"/>
-              <path d="M8 36h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 24L20 12l12 12v12H8V24z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="36" width="24" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="13" y="39" width="6" height="3" rx="0.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M34 44v-6h8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34 42h5M34 40h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Kitchens &amp; Baths</h3>
+          <h3 class="service-card__title">Basements &amp; In-Law Dwellings</h3>
           <p class="service-card__body">
-            Custom cabinet installations, countertops, tile work, and complete
-            kitchen and bathroom transformations tailored to your vision.
+            Unlock the hidden potential of your home with a finished basement or a fully
+            appointed in-law suite — thoughtfully designed for comfort, privacy, and
+            lasting quality.
           </p>
         </div>
 
-        <!-- Additions -->
+        <!-- Decks -->
         <div class="service-card reveal">
           <div class="service-card__icon" aria-hidden="true">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M24 10v28M10 24h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <rect x="8" y="8" width="14" height="14" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="6" y="20" width="36" height="5" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M13 20v5M20 20v5M27 20v5M34 20v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 25v16M24 25v16M38 25v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 29h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 29v12M20 29v12M28 29v12M33 29v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 41h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title">Additions</h3>
+          <h3 class="service-card__title">Decks</h3>
           <p class="service-card__body">
-            Expand your living or working space with a professionally designed and
-            built addition — seamlessly integrated into your existing structure.
-          </p>
-        </div>
-
-
-        <!-- Handyman -->
-        <div class="service-card reveal">
-          <div class="service-card__icon" aria-hidden="true">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M30 10l-6 6 8 8 6-6a6 6 0 0 0-8-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M32 24L16 40a2 2 0 0 1-3 0l-5-5a2 2 0 0 1 0-3L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="service-card__title">Handyman Services</h3>
-          <p class="service-card__body">
-            No job is too small. From repairs and installations to maintenance tasks,
-            we bring the same care and professionalism to every project.
+            Extend your living space outdoors with a custom-built deck crafted for
+            beauty and durability. Built to withstand New England weather, your deck
+            will be an asset and an enjoyment for decades to come.
           </p>
         </div>
 
@@ -312,44 +317,84 @@
           </p>
         </div>
 
-        <div class="testimonials__list">
+        <div class="testimonials__scroll-wrap">
+          <div class="testimonials__track">
 
-          <div class="testimonial-card reveal">
-            <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
-            <p class="testimonial-card__text">
-              We actually had Rob out for several projects in a row, ranging from
-              building a front stoop to hanging a mantle over the fireplace to building
-              a dresser/shelving combo along the knee wall of our bedroom to rebuilding
-              our main stairs to installing new kitchen cabinets and counters. We've had
-              no complaints, and any time we've second-guessed ourselves, we learned to
-              just trust Rob's advice because he knows what he's doing.
-            </p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__dot" aria-hidden="true"></div>
-              <div>
-                <div class="testimonial-card__name">Brian</div>
-                <div class="testimonial-card__loc">Cambridge, MA</div>
+            <!-- set 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+              <p class="testimonial-card__text">
+                We actually had Rob out for several projects in a row, ranging from
+                building a front stoop to hanging a mantle over the fireplace to building
+                a dresser/shelving combo along the knee wall of our bedroom to rebuilding
+                our main stairs to installing new kitchen cabinets and counters. We've had
+                no complaints, and any time we've second-guessed ourselves, we learned to
+                just trust Rob's advice because he knows what he's doing.
+              </p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__dot" aria-hidden="true"></div>
+                <div>
+                  <div class="testimonial-card__name">Brian</div>
+                  <div class="testimonial-card__loc">Cambridge, MA</div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="testimonial-card reveal">
-            <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
-            <p class="testimonial-card__text">
-              Rob brought genuine expertise to every step of our kitchen renovation.
-              The attention to detail, the craftsmanship, and the professionalism
-              throughout the entire project were truly exceptional. We couldn't be
-              happier with the result.
-            </p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__dot" aria-hidden="true"></div>
-              <div>
-                <div class="testimonial-card__name">Satisfied Client</div>
-                <div class="testimonial-card__loc">North Reading, MA</div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+              <p class="testimonial-card__text">
+                Rob brought genuine expertise to every step of our kitchen renovation.
+                The attention to detail, the craftsmanship, and the professionalism
+                throughout the entire project were truly exceptional. We couldn't be
+                happier with the result.
+              </p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__dot" aria-hidden="true"></div>
+                <div>
+                  <div class="testimonial-card__name">Satisfied Client</div>
+                  <div class="testimonial-card__loc">Andover, MA</div>
+                </div>
               </div>
             </div>
-          </div>
 
+            <!-- set 2 (duplicate for seamless loop) -->
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+              <p class="testimonial-card__text">
+                We actually had Rob out for several projects in a row, ranging from
+                building a front stoop to hanging a mantle over the fireplace to building
+                a dresser/shelving combo along the knee wall of our bedroom to rebuilding
+                our main stairs to installing new kitchen cabinets and counters. We've had
+                no complaints, and any time we've second-guessed ourselves, we learned to
+                just trust Rob's advice because he knows what he's doing.
+              </p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__dot" aria-hidden="true"></div>
+                <div>
+                  <div class="testimonial-card__name">Brian</div>
+                  <div class="testimonial-card__loc">Cambridge, MA</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+              <p class="testimonial-card__text">
+                Rob brought genuine expertise to every step of our kitchen renovation.
+                The attention to detail, the craftsmanship, and the professionalism
+                throughout the entire project were truly exceptional. We couldn't be
+                happier with the result.
+              </p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__dot" aria-hidden="true"></div>
+                <div>
+                  <div class="testimonial-card__name">Satisfied Client</div>
+                  <div class="testimonial-card__loc">Andover, MA</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -593,9 +638,9 @@
         GALLERY.forEach((img, i) => track.appendChild(makeItem(img, i)));
       }
 
-      // Consistent scroll speed ~120px/s
+      // Consistent scroll speed ~50px/s
       const totalPx = track.scrollWidth / 2;
-      const speed   = Math.round(totalPx / 120);
+      const speed   = Math.round(totalPx / 50);
       track.style.animationDuration = speed + 's';
     })();
 
@@ -631,6 +676,52 @@
       });
     }, { threshold: 0.12 });
     revealEls.forEach(el => observer.observe(el));
+
+    // ── Testimonial scroll snap on hover ────────────────────
+    (function () {
+      const wrap  = document.querySelector('.testimonials__scroll-wrap');
+      const track = document.querySelector('.testimonials__track');
+      if (!wrap || !track) return;
+
+      const DURATION = 18; // must match CSS animation-duration
+      let snapY = 0;
+
+      function getCurrentY() {
+        return new DOMMatrix(window.getComputedStyle(track).transform).m42;
+      }
+
+      function nearestCardTop(y) {
+        const halfCount = Math.floor(track.children.length / 2);
+        const firstSet  = Array.from(track.children).slice(0, halfCount);
+        let best = 0, minDist = Infinity;
+        firstSet.forEach(card => {
+          const target = -card.offsetTop;
+          const dist   = Math.abs(y - target);
+          if (dist < minDist) { minDist = dist; best = target; }
+        });
+        return best;
+      }
+
+      wrap.addEventListener('mouseenter', () => {
+        snapY = nearestCardTop(getCurrentY());
+        track.style.animationPlayState = 'paused';
+        track.style.transition = 'transform 0.4s ease';
+        track.style.transform  = `translateY(${snapY}px)`;
+      });
+
+      wrap.addEventListener('mouseleave', () => {
+        const halfHeight = track.offsetHeight / 2;
+        const delay      = -(Math.abs(snapY) / halfHeight) * DURATION;
+        // set delay while still paused + inline transform in place
+        track.style.animationDelay     = delay + 's';
+        track.style.animationPlayState = 'paused';
+        void track.offsetHeight; // flush
+        track.style.transition = '';
+        track.style.transform  = '';
+        void track.offsetHeight; // flush again
+        track.style.animationPlayState = 'running';
+      });
+    })();
   </script>
 
 </body>
